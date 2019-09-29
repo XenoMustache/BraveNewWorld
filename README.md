@@ -1,1 +1,2 @@
-# BraveNewWorld
+# Brave New World
+Brave New World is an open source ASCII style game developed with the Gamemaker Studio 2 Engine. The code in this repository is provided free of charge so long as you follow the guidelins of the liscense agreement provided with the project. If you'd like to commit to the project, go ahead and create a pull request. I will review it and if I like the centent provided I will add it to the project.
