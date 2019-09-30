@@ -4,7 +4,10 @@ cell_width = 12;
 cell_height = 16;
 player_x = 0;
 player_y = 0;
+inventory_open = false;
+player_can_move = true;
 grid = ds_grid_create(grid_width, grid_height);
+inventory = ds_list_create();
 for (var i = 0; i < grid_width; i++) {
 	for (var j = 0; j < grid_height; j++) {
 		grid[# i, j] = ds_list_create();
@@ -14,7 +17,7 @@ for (var i = 0; i < grid_width; i++) {
 	}
 }
 ds_list_set(grid[# grid_width div 2, grid_height div 2], 1, "player");
-ds_list_set(grid[# (grid_width div 2)+1, grid_height div 2], 1, "rat");
+//ds_list_set(grid[# (grid_width div 2)+1, grid_height div 2], 1, "rat");
 for (var m = 0; m < grid_width; m++) {
 	ds_list_set(grid[# m, 0], 1, "wall");
 	ds_list_set(grid[# m, 0], 2, "wood");
